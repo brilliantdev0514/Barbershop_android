@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#111111"
+    tools:context=".ClientActivity">
+    <TextView
+        android:id="@+id/ClientPageTitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:text="BOOK APPOINTMENT"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:background="#000"
+        android:gravity="center"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/ClientDate"
+        android:layout_below="@+id/ClientPageTitle"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textColor="#4B9C59"
+        android:textSize="20dp"/>
+    <TextView
+        android:id="@+id/ClientTime"
+        android:layout_below="@+id/ClientDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#1F9CD2"
+        android:textSize="18dp"/>
+    <TextView
+        android:id="@+id/About_1"
+        android:layout_below="@+id/ClientTime"
+        android:text="Sevice Date and Time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textSize="25dp"
+        android:padding="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bordertop"/>
+    <TextView
+        android:id="@+id/About_2"
+        android:layout_below="@+id/About_1"
+        android:text="Tuesday - Saturday : 09:00 AM - 06:00 PM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textSize="15dp"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/About_3"
+        android:layout_below="@+id/About_2"
+        android:text="                     Sunday : 10:00 AM - 06:00 PM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textSize="15dp"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/About_4"
+        android:layout_below="@+id/About_3"
+        android:text="          Monday :                 off     "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:background="@drawable/borderbottom"
+        android:paddingBottom="15dp"/>
+    ///////////////////////////////////////////
+    <RelativeLayout
+        android:id="@+id/BookingOrderButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/About_4"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/BookingOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:layout_alignParentLeft="true"
+            android:textSize="25dp"
+            android:text="Booking Order"
+            android:textColor="#fff"/>
+
+        <Button
+            android:id="@+id/cancelNow"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/buttonradius"
+            android:gravity="center"
+            android:text="Cancel"
+            android:textColor="#251B16"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/bookNow"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@+id/cancelNow"
+            android:background="@drawable/buttonradius"
+            android:gravity="center"
+            android:text="Book"
+            android:textColor="#251B16"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:layout_below="@+id/BookingOrderButton"
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="#b5b5b5"
+        android:dividerHeight="1dp"
+        android:listSelector="@drawable/list_selector" />
+</RelativeLayout>

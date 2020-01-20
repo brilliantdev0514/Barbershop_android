@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name" formatted="true">FashionHair</string>
+    <string name="notification_activity">NotificationView</string>
+</resources>

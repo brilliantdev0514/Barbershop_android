@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/listbackgroundchange"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal"
+    android:padding="5dip">
+
+    <!--  ListRow Left sied Thumbnail image -->
+    <LinearLayout
+        android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dip"
+        android:background="@drawable/image_bg"
+        android:padding="3dip"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/list_image"
+            android:layout_width="35dip"
+            android:layout_height="35dip"
+            android:src="@drawable/avatar" />
+
+    </LinearLayout>
+
+    <!-- Title Of Song-->
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:maxLength="10"
+        android:paddingLeft="10dp"
+        android:text="Rihanna Love the way lie"
+        android:textColor="#76FF03"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+
+    <!-- Rightend Duration -->
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/uid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/request_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dip"
+        android:gravity="right"
+        android:text="10:45 AM"
+        android:textColor="#318D47"
+        android:textSize="15dip"
+        android:textStyle="bold" />
+
+    <!-- Rightend Arrow -->
+    <TextView
+        android:id="@+id/state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dip"
+        android:text="REQUEST"
+        android:textColor="#DAC584"
+        android:textStyle="bold" />
+
+</RelativeLayout>

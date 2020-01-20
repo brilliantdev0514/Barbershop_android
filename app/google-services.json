@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "562762536560",
+    "firebase_url": "https://ivan-fashion.firebaseio.com",
+    "project_id": "ivan-fashion",
+    "storage_bucket": "ivan-fashion.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:562762536560:android:ff76d733763d6391d306b5",
+        "android_client_info": {
+          "package_name": "com.Ivan.fashionhair"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "562762536560-rslrcm6tadlfo4dk5e6rv2524c18rv4p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.Ivan.fashionhair",
+            "certificate_hash": "cd87f5374599f7d39bc54926bf59690a4cf4f600"
+          }
+        },
+        {
+          "client_id": "562762536560-ud94eknb9r9q5ucju259jhkkdoj6f7m0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCW8xT8WUtNADECAlx6Cck5lwD86r70C9U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "562762536560-ud94eknb9r9q5ucju259jhkkdoj6f7m0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

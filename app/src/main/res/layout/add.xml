@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#111111"
+    tools:context=".BarberActivity">
+    <TextView
+        android:id="@+id/BarberPageTitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:text="APPOINTMENTS"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:background="#000"
+        android:gravity="center"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/dateDisp"
+        android:layout_below="@+id/BarberPageTitle"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textColor="#4B9C59"
+        android:textSize="20dp"/>
+    <TextView
+        android:id="@+id/timeDisp"
+        android:layout_below="@+id/dateDisp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#1F9CD2"
+        android:textSize="18dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/timeDisp"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="16dp"
+            android:hint="Username"
+            android:textColorHint="#AE9A9A"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:backgroundTint="#fff"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/userPhone"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/username"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:layout_marginRight="4dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif"
+            android:textColorHint="#AE9A9A"
+            android:textColor="#fff"
+            android:backgroundTint="#fff"
+            android:hint="Phone number"
+            android:inputType="phone" />
+
+        <Button
+            android:id="@+id/addBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/userPhone"
+            android:background="@drawable/buttonradius"
+            android:gravity="center"
+            android:text="Add"
+            android:textColor="#251B16"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#111111"
+    tools:context=".BarberActivity">
+    <TextView
+        android:id="@+id/BarberPageTitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:text="APPOINTMENTS"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:background="#000"
+        android:gravity="center"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/BarberDate"
+        android:layout_below="@+id/BarberPageTitle"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textColor="#4B9C59"
+        android:textSize="20dp"/>
+    <TextView
+        android:id="@+id/BarberTime"
+        android:layout_below="@+id/BarberDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#1F9CD2"
+        android:textSize="18dp"/>
+    <TextView
+        android:id="@+id/OrderList"
+        android:layout_below="@+id/BarberTime"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_alignParentLeft="true"
+        android:textSize="25dp"
+        android:text="Order List"
+        android:textColor="#fff"
+        android:paddingLeft="15dp"/>
+
+    <Button
+        android:id="@+id/requestEnableBtn"
+        android:layout_below="@+id/BarberTime"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/clearBtn"
+        android:textSize="15dp"
+        android:text="Diasable"
+        android:textColor="#251B16"
+        android:background="@drawable/buttonradius"/>
+    <Button
+        android:id="@+id/clearBtn"
+        android:layout_below="@+id/BarberTime"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:textSize="15dp"
+        android:text="Clear"
+        android:textColor="#251B16"
+        android:background="@drawable/buttonradius"/>
+
+    <ListView
+        android:layout_below="@+id/OrderList"
+        android:id="@+id/AdminList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="#b5b5b5"
+        android:dividerHeight="1dp"
+        android:listSelector="@drawable/list_selector"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/customAddBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        app:srcCompat="@drawable/add" />
+
+
+</RelativeLayout>

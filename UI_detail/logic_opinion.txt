@@ -1,0 +1,32 @@
+﻿
+Assume :
+	There are 4 clients and they are going to cut their hair on today.
+	Their names are as follow:
+		First client's name is "Alex"
+		Second client's name is "Bolt"
+		First client's name is "Coren"
+		First client's name is "David"
+	They send you the request that they will cut their hair.
+	Their request times are as follow.
+		"Alex" : 10:00 am -10.30 am.
+		"Bolt" : 10:30 am -11.00 am.
+		"Coren" : 11:00 am -11.30 am.
+		"David" : 11:30 am -12.00 am.
+	Current time is 9:30 am and their state of this app(reference the second image of 2.jpg file) are REQUEST. 
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+	After 30 minutes,current time is 10:00 am.
+	At this time, Alex arrive at barbershop and start to cut hair.
+	At same time, You check his state of this app(reference the second image of 2.jpg file) to COPLETED.
+	And this app send Bolt the message that he can arrive at barbershop in 10:30 am.
+	Then Bolt receive this massage and check to "yes" or "no".
+	If Bolt check to "yes",his state of your app be displyed to REQUEST.
+	But Bolt check to "no", his state of your app be displyed to CANCELED.
+	when he click "no" , Bolt's app ask him "Will you update your request time?"
+	If he click "yes", he can update request time and if he click "no", Bolt's app be closed.
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+*********************************************************************************************************
+        I have a question in this case ,which Bolt cancel his request.
+	Will you rest?
+	Will you Call next client?
+*********************************************************************************************************

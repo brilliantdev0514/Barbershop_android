@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerifyPhoneActivity"
+    android:background="#111111">
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:text="Wait for the code I sent You"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+            android:textColor="@color/colorPrimary" />
+
+<!--        <ProgressBar-->
+<!--            android:id="@+id/progressbar"-->
+<!--            android:layout_below="@id/textView"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content" />-->
+
+        <EditText
+            android:id="@+id/editTextCode"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:digits="0123456789"
+            android:drawablePadding="10dp"
+            android:hint="Enter verification code"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:textColor="#fff"
+            android:textColorHint="#AE9A9A"
+            android:background="@drawable/photo_radius"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/VerifyButton"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextCode"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/buttonradius"
+            android:text="Verify"
+            android:textAllCaps="false"
+            android:textColor="#251B16"
+            android:textSize="20dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
